@@ -1,0 +1,33 @@
+:root {
+  /* defaults */
+
+  /*  colors */
+  & {
+    --body: rgb(225, 225, 225);
+    --color-shadow: rgb(170, 170, 170);
+    --contrast-1: rgb(240, 240, 240);
+    --contrast-2: rgb(255, 255, 255);
+    --text-color: rgb(30, 30, 30);
+    --primary: rgb(15, 15, 15);
+    --text-muted: 0.6;
+  }
+
+  --input-hover: var(--body);
+
+  /* shadows */
+  --card-shadow: 0 0 5px -1px var(--color-shadow);
+
+  /* measurements */
+  --radius: 6px;
+  --spacing: calc(50px + 2vw);
+
+  &[theme='dark'] {
+    /* colors */
+    --body: rgb(30, 30, 30);
+    --color-shadow: rgb(85, 85, 85);
+    --contrast-1: rgb(45, 45, 45);
+    --contrast-2: rgb(75, 75, 75);
+    --text-color: rgb(225, 225, 225);
+    --primary: rgb(240, 240, 240);
+  }
+}
