@@ -1,22 +1,14 @@
 :root {
-  /* defaults */
-
-  /*  colors */
-  & {
-    --body: rgb(225, 225, 225);
-    --color-shadow: rgb(170, 170, 170);
-    --contrast-1: rgb(240, 240, 240);
-    --contrast-2: rgb(255, 255, 255);
-    --text-color: rgb(30, 30, 30);
-    --primary: rgb(15, 15, 15);
-    --text-muted: 0.6;
-    --danger: #f6e8e8;
-    --info: #dcf0ff;
-    --success: #e8fbf4;
-    --warning: #f8e8d5;
-  }
-
+  /* general */
   --input-hover: var(--body);
+  --text-muted: 0.6;
+  
+  /* colors */
+  --danger: 200, 60, 60;
+  --info: 60, 130, 200;
+  --success: 60, 200, 130;
+  --warning: 200, 130, 60;
+  --link: var(--text-color)
 
   /* shadows */
   --card-shadow: 0 0 5px -1px var(--color-shadow);
@@ -25,13 +17,26 @@
   --radius: 6px;
   --spacing: calc(50px + 2vw);
 
+
+  /* light-mode */
+  & {
+    /*  colors */
+    --body: rgb(225, 225, 225);
+    --color-shadow: rgb(170, 170, 170);
+    --contrast-1: rgb(240, 240, 240);
+    --contrast-2: rgb(255, 255, 255);
+    --text-color: 30, 30, 30;
+    --primary: rgb(15, 15, 15);
+  }
+
+  /* dark-mode */
   &[theme='dark'] {
     /* colors */
     --body: rgb(30, 30, 30);
     --color-shadow: rgb(85, 85, 85);
     --contrast-1: rgb(45, 45, 45);
     --contrast-2: rgb(75, 75, 75);
-    --text-color: rgb(225, 225, 225);
+    --text-color: 225, 225, 225;
     --primary: rgb(240, 240, 240);
   }
 }

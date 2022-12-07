@@ -7,7 +7,7 @@
 }
 
 * {
-  color: var(--text-color);
+  color: rgb(var(--text-color));
 }
 
 :focus-visible {
@@ -41,7 +41,6 @@ ul {
 
 a {
   display: block;
-  color: inherit;
   text-decoration: none;
   cursor: pointer;
 }
