@@ -19,8 +19,8 @@ html {
 }
 
 body {
-  font-family: 'Montserrat';
-  background-color: var(--body);
+  font-family: "Montserrat";
+  background-color: rgb(var(--body));
 }
 
 main {
@@ -49,6 +49,14 @@ span {
   display: inline-block;
 }
 
+small {
+  font-size: 0.8em;
+}
+
 img {
   max-width: 100%;
+}
+
+button {
+  all: inherit;
 }

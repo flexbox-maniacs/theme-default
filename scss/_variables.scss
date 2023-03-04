@@ -1,42 +1,37 @@
 :root {
-  /* general */
-  --input-hover: var(--body);
-  --text-muted: 0.6;
-  
   /* colors */
   --danger: 200, 60, 60;
   --info: 60, 130, 200;
   --success: 60, 200, 130;
   --warning: 200, 130, 60;
-  --link: var(--text-color)
+  --link: var(--text-color);
 
   /* shadows */
-  --card-shadow: 0 0 5px -1px var(--color-shadow);
+  --card-shadow: 0 0 5px -1px rgb(var(--color-shadow));
 
   /* measurements */
   --radius: 6px;
   --spacing: calc(50px + 2vw);
 
-
   /* light-mode */
   & {
     /*  colors */
-    --body: rgb(225, 225, 225);
-    --color-shadow: rgb(170, 170, 170);
-    --contrast-1: rgb(240, 240, 240);
-    --contrast-2: rgb(255, 255, 255);
+    --body: 225, 225, 225;
+    --color-shadow: 170, 170, 170;
+    --contrast-1: 240, 240, 240;
+    --contrast-2: 255, 255, 255;
     --text-color: 30, 30, 30;
-    --primary: rgb(15, 15, 15);
+    --primary: 15, 15, 15;
   }
 
   /* dark-mode */
-  &[theme='dark'] {
+  &[theme="dark"] {
     /* colors */
-    --body: rgb(30, 30, 30);
-    --color-shadow: rgb(85, 85, 85);
-    --contrast-1: rgb(45, 45, 45);
-    --contrast-2: rgb(75, 75, 75);
+    --body: 30, 30, 30;
+    --color-shadow: 85, 85, 85;
+    --contrast-1: 45, 45, 45;
+    --contrast-2: 75, 75, 75;
     --text-color: 225, 225, 225;
-    --primary: rgb(240, 240, 240);
+    --primary: 240, 240, 240;
   }
 }
