@@ -7,7 +7,7 @@
   --link: var(--text-color);
 
   /* shadows */
-  --shadow: 0 0 5px -1px rgb(var(--color-shadow));
+  --shadow: 0px 0px 5px 0px rgba(var(--color-shadow), 0.05), 0px 1px 2px 0px rgba(var(--color-shadow), 0.15);
 
   /* measurements */
   --radius: 6px;
@@ -17,9 +17,10 @@
   & {
     /*  colors */
     --body: 225, 225, 225;
-    --color-shadow: 170, 170, 170;
-    --contrast-1: 240, 240, 240;
-    --contrast-2: 255, 255, 255;
+    --color-shadow: var(--text-color);
+    --contrast-1: 233, 233, 233;
+    --contrast-2: 241, 241, 241;
+    --contrast-3: 249, 249, 249;
     --text-color: 30, 30, 30;
     --primary: 15, 15, 15;
   }
@@ -28,9 +29,9 @@
   &[theme="dark"] {
     /* colors */
     --body: 30, 30, 30;
-    --color-shadow: 85, 85, 85;
-    --contrast-1: 45, 45, 45;
-    --contrast-2: 75, 75, 75;
+    --contrast-1: 38, 38, 38;
+    --contrast-2: 46, 46, 46;
+    --contrast-3: 54, 54, 54;
     --text-color: 225, 225, 225;
     --primary: 240, 240, 240;
   }
