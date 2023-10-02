@@ -1,3 +1,5 @@
+@import "./functions/contrast-value";
+
 :root {
   /* colors */
   --danger: 200, 60, 60;
@@ -14,13 +16,17 @@
   --spacing: calc(50px + 2vw);
 
   /* light-mode */
+
   & {
+    --contrast-variation: 8;
+
     /*  colors */
-    --body: 225, 225, 225;
+    $body: (231, 231, 231);
+    --body: #{$body};
     --color-shadow: var(--text-color);
-    --contrast-1: 233, 233, 233;
-    --contrast-2: 241, 241, 241;
-    --contrast-3: 249, 249, 249;
+    --contrast-1: #{contrast-value(1, $body)};
+    --contrast-2: #{contrast-value(2, $body)};
+    --contrast-3: #{contrast-value(3, $body)};
     --text-color: 30, 30, 30;
     --primary: 15, 15, 15;
   }
@@ -28,10 +34,11 @@
   /* dark-mode */
   &[theme="dark"] {
     /* colors */
-    --body: 30, 30, 30;
-    --contrast-1: 38, 38, 38;
-    --contrast-2: 46, 46, 46;
-    --contrast-3: 54, 54, 54;
+    $body: (24, 24, 24);
+    --body: #{$body};
+    --contrast-1: #{contrast-value(-1, $body)};
+    --contrast-2: #{contrast-value(-2, $body)};
+    --contrast-3: #{contrast-value(-3, $body)};
     --text-color: 225, 225, 225;
     --primary: 240, 240, 240;
   }

@@ -1,0 +1,5 @@
+@function contrast-value($multiplier, $color) {
+  @return calc(nth($color, 2) - var(--contrast-variation) * $multiplier),
+    calc(nth($color, 2) - var(--contrast-variation) * $multiplier),
+    calc(nth($color, 2) - var(--contrast-variation) * $multiplier);
+}
