@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-* {
-  color: rgb(var(--text-color));
-}
-
 :focus-visible {
   outline: unset;
 }
@@ -16,6 +12,8 @@
 html {
   transition: 0.2s ease-in-out;
   scroll-behavior: smooth;
+  color: rgb(var(--text-color));
+  accent-color: rgb(var(--primary));
 }
 
 body {
