@@ -16,7 +16,7 @@ h1 {
   }
 
   @include min($desktop) {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 
@@ -28,7 +28,7 @@ h2 {
   }
 
   @include min($desktop) {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
@@ -40,7 +40,7 @@ h3 {
   }
 
   @include min($desktop) {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -54,18 +54,6 @@ caption {
 
   @include min($desktop) {
     font-size: 20px;
-  }
-}
-
-h5 {
-  font-weight: 400;
-
-  @include max($desktop) {
-    font-size: 15px;
-  }
-
-  @include min($desktop) {
-    font-size: 18px;
   }
 }
 
