@@ -9,7 +9,7 @@ html {
 }
 
 h1 {
-  font-weight: 600;
+  font-weight: 500;
 
   @include max($desktop) {
     font-size: 19px;
@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-  font-weight: 500;
+  font-weight: 400;
 
   @include max($desktop) {
     font-size: 18px;
@@ -33,7 +33,7 @@ h2 {
 }
 
 h3 {
-  font-weight: 500;
+  font-weight: 400;
 
   @include max($desktop) {
     font-size: 17px;
@@ -53,7 +53,7 @@ caption {
   }
 
   @include min($desktop) {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
