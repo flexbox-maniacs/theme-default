@@ -1,0 +1,14 @@
+@use "sass:meta";
+@use "sass:map";
+
+@mixin generateVariables($variables, $groupName) {
+  @each $varName, $varValue in $variables {
+    @if meta.type-of($varValue) == map {
+      @each $name, $value in $varValue {
+        --#{$groupName}-#{$varName}-#{$name}: #{$value};
+      }
+    } @else {
+      --#{$groupName}-#{$varName}: #{$varValue};
+    }
+  }
+}
