@@ -1,0 +1,3 @@
+@function spacing($divisor) {
+  @return calc(var(--spacing-global) / $divisor);
+}
