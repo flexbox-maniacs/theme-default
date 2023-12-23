@@ -12,11 +12,11 @@ h1 {
   font-weight: 500;
 
   @include max($desktop) {
-    font-size: 19px;
+    font-size: 1.4rem;
   }
 
   @include min($desktop) {
-    font-size: 28px;
+    font-size: 1.8rem;
   }
 }
 
@@ -24,11 +24,11 @@ h2 {
   font-weight: 400;
 
   @include max($desktop) {
-    font-size: 18px;
+    font-size: 1.3rem;
   }
 
   @include min($desktop) {
-    font-size: 24px;
+    font-size: 1.6rem;
   }
 }
 
@@ -36,11 +36,11 @@ h3 {
   font-weight: 400;
 
   @include max($desktop) {
-    font-size: 17px;
+    font-size: 1.2rem;
   }
 
   @include min($desktop) {
-    font-size: 20px;
+    font-size: 1.4rem;
   }
 }
 
@@ -49,11 +49,11 @@ caption {
   font-weight: 400;
 
   @include max($desktop) {
-    font-size: 16px;
+    font-size: 1.1rem;
   }
 
   @include min($desktop) {
-    font-size: 18px;
+    font-size: 1.2rem;
   }
 }
 
