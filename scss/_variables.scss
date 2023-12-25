@@ -4,6 +4,7 @@
 :root {
   @include generateVariables(map-get(variables.$measures, border-radius), border-radius);
   @include generateVariables(map-get(variables.$measures, spacing), spacing);
+  @include generateVariables(map-get(variables.$measures, transition), transition);
 
   &[theme="light"] {
     @include generateVariables(map-get(variables.$colors, light), color);

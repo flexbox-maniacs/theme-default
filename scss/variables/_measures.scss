@@ -5,4 +5,7 @@ $measures: (
   spacing: (
     global: calc(48px + 2vw),
   ),
+  transition: (
+    default: 200ms ease,
+  ),
 );
