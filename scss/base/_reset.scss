@@ -21,17 +21,6 @@ body {
   background-color: rgb(var(--color-background));
 }
 
-main {
-  margin: {
-    top: calc(var(--spacing) / 2);
-    bottom: calc(var(--spacing) / 2);
-  }
-}
-
-section:not(:last-child) {
-  margin-bottom: var(--spacing);
-}
-
 ul {
   padding: 0;
   list-style: none;
