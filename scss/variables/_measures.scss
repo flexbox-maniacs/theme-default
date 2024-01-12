@@ -1,9 +1,12 @@
+@import "../functions/size";
+
 $measures: (
   border-radius: (
     default: 6px,
   ),
-  spacing: (
-    default: calc(48px + 2vw),
+  size: (
+    section-default: section(1, "multaiply"),
+    container-default: calc(var(--size-default) * 15),
   ),
   transition: (
     default: 200ms ease,

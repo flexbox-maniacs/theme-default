@@ -1,3 +1,12 @@
-@function size($divisor) {
-  @return calc(var(--spacing-default) / $divisor);
+$spacing-unit: 4px;
+
+@function section($value, $operation: "divide") {
+  @if $operation == "divide" {
+    @return calc((($spacing-unit * 12) + 2vw) / $value);
+  } @else if $operation == "multiply" {
+    @return calc((($spacing-unit * 12) + 2vw) * $value);
+  } @else {
+    @error "Unsupported operation. Please use 'divide' or 'multiply'.";
+    @return null;
+  }
 }
