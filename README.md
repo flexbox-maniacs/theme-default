@@ -6,10 +6,15 @@
 - [dependecies project](https://github.com/flexbox-maniacs/dependencies)
 
 ## aliases:
+### `tsconfig.json`: compilerOptions.paths
 
-- `"@scripts": ["./node_modules/{YOUR DEPENDENCIES FOLDER}/scripts.ts"]`
-- `"@mixins": ["./node_modules/{YOUR DEPENDENCIES FOLDER}/sass/mixins/*"]`
+- `"@theme": ["./node_modules/{YOUR THEME DEFAULT FOLDER}/scss/main.scss"]`
+
+### `vite.config.ts`: defineConfig.resolve.alias
+(`import * as path from "path"`)
+
+- `"@theme": path.resolve(__dirname, "./node_modules/{YOUR THEME DEFAULT FOLDER}/scss/main.scss")`
 
 ## general configuration
 
-- `window.React = React` in root file (along `React` and `ReactDOM` import)
+- `import "@theme"` in main file
