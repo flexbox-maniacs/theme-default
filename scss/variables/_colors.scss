@@ -8,8 +8,8 @@ $colors: (
   dark: (
     background: "24, 24, 24",
     background-contrast-1: #{contrast-value(1, (24, 24, 24))},
-    background-contrast-1: #{contrast-value(2, (24, 24, 24))},
-    background-contrast-1: #{contrast-value(3, (24, 24, 24))},
+    background-contrast-2: #{contrast-value(2, (24, 24, 24))},
+    background-contrast-3: #{contrast-value(3, (24, 24, 24))},
     text: "225, 225, 225",
   ),
 );
