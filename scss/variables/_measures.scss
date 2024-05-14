@@ -5,8 +5,8 @@ $measures: (
     default: 6px,
   ),
   size: (
-    section-default: section(1, "multaiply"),
-    container-default: calc(var(--size-default) * 15),
+    section-default: section(1, "multiply"),
+    container-default: section(15, "multiply"),
   ),
   transition: (
     default: 200ms ease,

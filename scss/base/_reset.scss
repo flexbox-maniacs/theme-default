@@ -10,7 +10,7 @@
 }
 
 html {
-  transition: 0.2s ease-in-out;
+  transition: var(--transition-default);
   scroll-behavior: smooth;
   color: rgb(var(--color-text));
   accent-color: rgb(var(--color-primary));

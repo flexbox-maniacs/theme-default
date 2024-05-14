@@ -5,9 +5,11 @@ $colors: (
     background: "231, 231, 231",
     text: "30, 30, 30",
   ),
-  dark: ( 
+  dark: (
     background: "24, 24, 24",
     background-contrast-1: #{contrast-value(1, (24, 24, 24))},
+    background-contrast-1: #{contrast-value(2, (24, 24, 24))},
+    background-contrast-1: #{contrast-value(3, (24, 24, 24))},
     text: "225, 225, 225",
   ),
 );
