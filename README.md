@@ -16,7 +16,7 @@
 (`import * as path from "path"`)
 
 - `"@theme": path.resolve(__dirname, "./node_modules/{YOUR THEME DEFAULT FOLDER}/scss/main.scss")`
-- `"@functions": path.resolve(__dirname, "./node_modules/@flex/dependencies/sass/functions")`
+- `"@functions": path.resolve(__dirname, "./node_modules/{YOUR DEPENDENCIES FOLDER}/sass/functions")`
 
 ## general configuration
 
