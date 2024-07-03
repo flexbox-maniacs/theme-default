@@ -9,7 +9,7 @@
 ### `tsconfig.json`: compilerOptions.paths
 
 - `"@theme": ["./node_modules/{YOUR THEME DEFAULT FOLDER}/scss/main.scss"]`
-- `"@functions": ["./node_modules/@flex/dependencies/sass/functions"]`
+- `"@functions": ["./node_modules/{YOUR DEPENDENCIES FOLDER}/sass/functions"]`
 
 
 ### `vite.config.ts`: defineConfig.resolve.alias
